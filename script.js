@@ -43,7 +43,7 @@ function sub(){
        document.getElementById('digits').style.color=='green'
     ){  
       document.getElementById("comm").style.color='green';
-      document.getElementById("comm").innerHTML="Your Password is Submitted";
+      document.getElementById("comm").innerHTML="Your Password is Secure.";
       document.getElementById('Conditions').innerText="";
       document.getElementById("number").innerText =""; 
       document.getElementById("small").innerText = "";
@@ -51,7 +51,7 @@ function sub(){
       document.getElementById("symbols").innerText = "";
       document.getElementById('digits').innerText="";
     }else{
-        document.getElementById("comm").innerHTML="Your Password is Not Submitted&nbsp;!";
+        document.getElementById("comm").innerHTML="Your Password is Not Secure&nbsp;!";
         document.getElementById("comm").style.color='red'
         document.getElementById('Conditions').innerText="Conditions/Rules:";
       document.getElementById("number").innerText ="(1)Enter The Number."; 
