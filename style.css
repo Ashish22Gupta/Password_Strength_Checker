@@ -5,53 +5,57 @@
 body{
      margin-top: 180px;
      background-color: lightgrey;
-     /* background-image: linear-gradient(yellow,orange,lightgreen,lightblue,yellow); */
+}
+.condiv{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: fit-content;
+    text-align: justify;
 }
 #val{
-      height: 60px;
-      width: 500px;
+      height: auto;
+      padding: 5px;
+      max-width: 500px;
+      width: 75%;
       font-size: xx-large;
       background-color: blue;
       color: aqua;
       border-radius: 5px;
-      /* margin-left: 35%;   */
 }
 #submit{
        background-color: lightsteelblue;
-       border-radius: 5px;
-       height:50px;
-       width: 300px;
+       border-radius: 10px;
+       height:auto;
+       width: auto;
+       padding: 5px;
        font-size:xx-large;
        color:blueviolet;
+       border: 2px solid blueviolet;
 }
-#number,#small,#capital,#symbols{
+#submit:hover{
+      background-color: blueviolet;
+      color: lightsteelblue;
+      border-color: lightsteelblue;
+}
+#number,#small,#capital,#symbols,#digits{
       font-size:x-large;
 }
 #comm{
-       color: red;
        font-size: xx-large;
-       background-color: black;
        text-align: center;
+       margin-top: 10px;
+       width: 100%;
 }
 #Conditions{
       font-size:xx-large;
+      margin-top: 10px;
 }
 @media only screen and (max-width: 1140px){
-    #val{
-        width: 45%;
-        height: auto;
-    }
-    #submit{
-        width: fit-content;
-        height: auto;
-    }
     #number,#small,#capital,#symbols{
         font-size:x-large;
     }
     b{
         font-size:larger;
-    }
-    #comm{
-        width: fit-content;
     }
 }        
