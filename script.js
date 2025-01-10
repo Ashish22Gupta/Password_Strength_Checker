@@ -54,6 +54,7 @@ function sub(){
     }else{
         document.getElementById("comm").innerHTML="Your Password is Not Secure!";
         document.getElementById("comm").style.color='red'
+        document.getElementById("comm").style.marginTop='10px';
         document.getElementById('Conditions').innerText="Conditions/Rules:";
       document.getElementById("number").innerText ="(1)Enter The Number."; 
       document.getElementById("small").innerText = "(2)Enter The Small Alphabet.";
