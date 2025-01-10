@@ -43,8 +43,8 @@ function sub(){
        document.getElementById('digits').style.color=='green'
     ){  
       document.getElementById("comm").style.color='green';
-      document.getElementById("comm").style.marginTop='-20px';
-      document.getElementById("comm").innerHTML="Your Password is Secure.";
+      document.getElementById("comm").style.marginTop='-50px';
+      document.getElementById("comm").innerHTML="Your Password is Secure";
       document.getElementById('Conditions').innerText="";
       document.getElementById("number").innerText =""; 
       document.getElementById("small").innerText = "";
@@ -54,7 +54,7 @@ function sub(){
     }else{
         document.getElementById("comm").innerHTML="Your Password is Not Secure!";
         document.getElementById("comm").style.color='red'
-        document.getElementById("comm").style.marginTop='10px';
+        document.getElementById("comm").style.marginTop='';
         document.getElementById('Conditions').innerText="Conditions/Rules:";
       document.getElementById("number").innerText ="(1)Enter The Number."; 
       document.getElementById("small").innerText = "(2)Enter The Small Alphabet.";
