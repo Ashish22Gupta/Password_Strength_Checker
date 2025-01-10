@@ -43,6 +43,7 @@ function sub(){
        document.getElementById('digits').style.color=='green'
     ){  
       document.getElementById("comm").style.color='green';
+      document.getElementById("comm").style.marginTop='-20px';
       document.getElementById("comm").innerHTML="Your Password is Secure.";
       document.getElementById('Conditions').innerText="";
       document.getElementById("number").innerText =""; 
