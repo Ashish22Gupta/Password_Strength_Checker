@@ -11,7 +11,7 @@ body{
     flex-direction: column;
     gap: 5px;
     width: fit-content;
-    text-align: justify;
+    text-align: left;
 }
 #val{
       height: auto;
