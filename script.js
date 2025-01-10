@@ -51,7 +51,7 @@ function sub(){
       document.getElementById("symbols").innerText = "";
       document.getElementById('digits').innerText="";
     }else{
-        document.getElementById("comm").innerHTML="Your Password is Not Secure&nbsp;!";
+        document.getElementById("comm").innerHTML="Your Password is Not Secure!";
         document.getElementById("comm").style.color='red'
         document.getElementById('Conditions').innerText="Conditions/Rules:";
       document.getElementById("number").innerText ="(1)Enter The Number."; 
