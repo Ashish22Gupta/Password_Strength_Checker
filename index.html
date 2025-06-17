@@ -5,19 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password Strength Checker</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-        <input type="text" id="val" oninput="check()" placeholder="Enter Password!">
-        <input type="button" id="submit" value="Check" onclick="sub()">
-        <p class="condiv" id="condiv">
-            <b id="Conditions">Conditions/Rules:</b>
-            <i id="number">(1)Enter The Number.</i>
-            <i id="small">(2)Enter The Small Alphabet.</i>
-            <i id="capital">(3)Enter The Capital Alphabet.</i>
-            <i id="symbols">(4)Enter The Symbols.</i>
-            <i id="digits">(5)Enter atleast 8 digits.</i>
-        <p id="comm"></p>
-        </p>
+    <div class="container">
+        <h1>Password Strength Checker</h1>
+        
+        <div class="password-container">
+            <input type="text" id="password" placeholder="Enter your password" autocomplete="off" oninput="checkPassword()">
+            <div class="strength-meter">
+                <div class="strength-meter-fill" id="strength-meter"></div>
+            </div>
+        </div>
+        
+        <div class="requirements">
+            <h2>Password Requirements:</h2>
+            <div class="requirement-item">
+                <span class="requirement-icon" id="length-icon">✗</span>
+                <span id="length-text">At least 8 characters</span>
+            </div>
+            <div class="requirement-item">
+                <span class="requirement-icon" id="lowercase-icon">✗</span>
+                <span id="lowercase-text">At least one lowercase letter</span>
+            </div>
+            <div class="requirement-item">
+                <span class="requirement-icon" id="uppercase-icon">✗</span>
+                <span id="uppercase-text">At least one uppercase letter</span>
+            </div>
+            <div class="requirement-item">
+                <span class="requirement-icon" id="number-icon">✗</span>
+                <span id="number-text">At least one number</span>
+            </div>
+            <div class="requirement-item">
+                <span class="requirement-icon" id="special-icon">✗</span>
+                <span id="special-text">At least one special character (@ _ . !)</span>
+            </div>
+        </div>
+        
+        <button class="btn" id="check-btn" onclick="submitPassword()">Check Password</button>
+        
+        <div class="feedback" id="feedback"></div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
