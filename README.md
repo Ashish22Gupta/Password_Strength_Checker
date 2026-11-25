@@ -6,7 +6,6 @@
 A lightweight, fully responsive web tool that validates password strength in real time. Built with zero dependencies, it visually tracks each requirement, animates a strength meter, and gives instant success/error feedback — demonstrating DOM manipulation, regex validation, and responsive UI design.
 
 ![Version](https://img.shields.io/badge/Version-1.0.0-4361ee)
-![License](https://img.shields.io/badge/License-MIT-green)
 ![Status](https://img.shields.io/badge/Status-Portfolio%20Project-F4B400)
 ![Responsive](https://img.shields.io/badge/Responsive-Desktop%20%26%20Mobile-2D6A4F)
 
